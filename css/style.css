@@ -1,0 +1,2540 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #F9FCFF;
+}
+
+.container {
+    width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+/* alignments-class */
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* our-benefits-section */
+
+/* toggle */
+
+header .nav-moblie {
+    color: #00244F;
+    border: 1px solid #00244F;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 24px;
+    border-radius: 5px;
+    height: 35px;
+    margin-left: auto;
+    display: none;
+    transition: all .3s;
+}
+
+/* toggle-end */
+
+/* header */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 95%;
+}
+
+.main-menu {
+    margin-left: 25px;
+}
+
+.main-menu nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .main-menu nav ul li a */
+
+.main-menu nav ul li {
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.main-menu nav ul li:first-child {
+    margin-left: 0;
+}
+
+.main-menu nav ul li:last-child {
+    margin-right: 0;
+}
+
+.main-menu nav ul li a {
+    text-decoration: none;
+    color: #00244F;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    -webkit-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.main-menu nav ul li a i {
+    padding-left: 10px;
+}
+
+.right-side-menu {
+    position: relative;
+    right: -10%;
+}
+
+.main-menu nav ul li.right-side-menu>ul {
+    display: none;
+    position: absolute;
+    width: 75px;
+    top: 100%;
+    left: 0px;
+    z-index: 9;
+    text-align: left;
+}
+
+.main-menu nav ul li>ul {
+    display: none;
+    position: absolute;
+    width: 150px;
+    top: 100%;
+    left: 10px;
+    z-index: 9;
+    text-align: left;
+}
+
+.main-menu nav ul li>ul li {
+    float: none;
+    margin: 0;
+    background: rgb(0, 36, 79);
+    padding: 12px 7px;
+    transition: all .5s;
+}
+
+.main-menu nav ul li>ul li:hover {
+    background-color: #0F84EB;
+    color: #00244F;
+}
+
+.main-menu nav ul li>ul li a {
+    display: block;
+    color: #ffffff;
+    transition: all .3s;
+}
+
+/* header-End */
+
+/* slider-section */
+
+.slider-banner-section {
+    max-width: 100%;
+    background-image: url('../images/slider-img.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    padding-top: 80px;
+}
+
+.slider-banner-section::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 36, 79, 0.8);
+    z-index: -1;
+}
+
+.slider-ctn-wrraper {
+    max-width: 600px;
+    width: 100%;
+    z-index: 9;
+    margin: 0 auto;
+}
+
+.slider-heading {
+    margin-bottom: 55px;
+}
+
+.slider-heading h1 {
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 49px;
+    text-align: center;
+    color: #F5A623;
+}
+
+.slider-inputs-field {
+    padding: 0 22px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider-inputs-field select {
+    width: 100%;
+    padding: 16px 22px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #959EAD;
+    border: 1px solid #C3CAD9;
+    border-radius: 8px;
+    background-color: #ffffff;
+    background-image: url(../images/Polygon_1.svg);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: auto 20%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none
+}
+
+.slider-inputs-field select .country-option {
+    padding: 16px 12px;
+    color: #00244F;
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.pick-drop-date {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pick-drop-date input {
+    background: #FFFFFF;
+    border: 1px solid #C3CAD9;
+    color: #959EAD;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 16px 12px;
+    line-height: 22px;
+    outline: none;
+    max-width: 268px;
+    width: 100%;
+    position: relative;
+}
+
+
+.pick-drop-date input::-webkit-input-placeholder {
+    color: #959EAD;
+}
+
+.pick-drop-date input::-moz-placeholder {
+    color: #959EAD;
+}
+
+.pick-drop-date input:-ms-input-placeholder {
+    color: #959EAD;
+}
+
+.pick-drop-date input:-moz-placeholder {
+    color: #959EAD;
+}
+
+.age-vehicle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.age-vehicle select {
+    max-width: 180px;
+}
+
+.get-btn {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 160px;
+    width: 100%;
+    background: #FAAD13;
+    border-radius: 4px;
+    padding: 16px 22px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* slider-section-End */
+
+
+/* Complete-car-companies-WORLDWIDE-Section */
+.car-companies-worldwide-Section {
+    padding-top: 78px;
+    padding-bottom: 96px;
+    background-color: #f9fcff;
+}
+
+.car-worldwide-heading {
+    margin: 0 auto;
+}
+
+.car-worldwide-heading h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #183B56;
+}
+
+.car-companies-worldwide-img {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.car-companies-worldwide-img img {
+    max-width: 100%;
+    display: block;
+    margin: 0 20px;
+}
+
+.worldwide-excellent {
+    max-width: 1090px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 18px 0;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.worldwide-excellent .excellent-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.worldwide-excellent .excellent-ctn b {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-right: 14px;
+}
+
+.worldwide-excellent .excellent-ctn p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-right: 14px;
+}
+
+.worldwide-excellent .excellent-ctn small {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0 8px;
+}
+
+.worldwide-excellent .excellent-ctn span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #A5A5AB;
+    align-items: center;
+}
+
+.customers-reviews-heading {
+    max-width: 100%;
+    margin-bottom: 23px;
+}
+
+.customers-reviews {
+    padding: 0 10px;
+}
+
+.customers-reviews .row {
+    justify-content: space-evenly;
+}
+
+.customers-reviews .reviews-box-wrapper {
+    padding: 0 8px;
+    max-width: 358px;
+    width: 100%;
+}
+
+.customers-reviews .reviews-box-wrapper .reviews-box {
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 13px #E4EFFF;
+    border-radius: 16px;
+}
+
+.reviews-box .reviews-box-ctn p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: #183B56;
+    min-height: 54px;
+    margin-top: 28px;
+    margin-bottom: 8px;
+}
+
+.reviews-box-ctn .reviews-box-author-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviews-box-ctn .reviews-box-author-date span {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.22px;
+    color: #183B56;
+}
+
+.customers-reviews-check-out a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 49px;
+    display: block;
+    text-decoration: none;
+    color: #2D9CDB;
+}
+
+/* Complete-car-companies-WORLDWIDE-Section-End */
+
+
+
+
+
+
+
+
+
+
+/* our-benifits-section */
+.our-benifits-section {
+    padding-top: 75px;
+    max-width: 100%;
+    padding-bottom: 135px;
+    background-color: #ffffff;
+}
+
+.our-benifits-section .benifits-heading h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 49px;
+}
+
+.benifits-heading {
+    margin-bottom: 28px;
+}
+
+.our-benifits-section .benifits-heading span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #5A7184;
+    display: inline-block;
+}
+
+.benifits-box {
+    display: block;
+    max-width: 33.33%;
+    padding: 0 20px;
+    margin-bottom: 9px;
+}
+
+.benifits-box .benifits-box-wrapper {
+    border: 1px solid #E9E9E9;
+    border-radius: 11px;
+    width: 100%;
+    padding: 22px 30px;
+    height: 100%;
+}
+
+
+.benifits-box .benifits-img {
+    background-color: #F5A623;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.benifits-box .benifits-ctn {
+    padding-bottom: 28px;
+}
+
+.benifits-box .benifits-ctn p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    overflow: hidden;
+    word-wrap: break-word;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #5A7184;
+}
+
+.benifits-box .benifits-ctn h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #183B56;
+    margin-bottom: 10px;
+}
+
+.benifits-box .benifits-links a {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-decoration: none;
+    color: #2D9CDB;
+}
+
+/* services-row */
+.our-benifits-section .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.our-benifits-services {
+    padding-left: 20px;
+    max-width: 70%;
+}
+
+.our-benifits-services-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.benifits-sub-heading {
+    max-width: 416px;
+    margin-top: 45px;
+}
+
+.benifits-sub-heading span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #5A7184;
+    display: inline-block;
+}
+
+.our-benifits-services ul {
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.our-benifits-services ul li {
+    list-style: none;
+    width: 50%;
+    position: relative;
+}
+
+.our-benifits-services ul li::before {
+    position: absolute;
+    color: #36B37E;
+    content: '\f00c';
+    font-family: 'FontAwesome';
+    left: 0;
+    top: 0;
+}
+
+.our-benifits-services ul li {
+    list-style: none;
+    word-wrap: break-word;
+    display: inline-block;
+    color: #183B56;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    margin-bottom: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.our-benifits-services ul li:last-child {
+    margin-bottom: 0;
+}
+
+.our-benifits-services ul li i {
+    color: #36B37E;
+    font-size: 14px;
+    line-height: 26px;
+    padding-right: 16px;
+}
+
+.our-benifits-services-img img {
+    max-width: 100%;
+}
+
+/* our-benefits-section-End */
+
+
+/* offers-and-deals-section */
+.offers-and-deals-section {
+    max-width: 100%;
+    position: relative;
+    background-color: #0D2436;
+    padding-top: 72px;
+    padding-bottom: 92px;
+}
+
+.offers-and-deals-section .row {
+    margin-left: -5px;
+    margin-right: -5px;
+    justify-content: center;
+}
+
+/* .offers-and-deals-section .offer-deals-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.offer-image {
+    position: absolute;
+    left: 0;
+    top: 20%;
+}
+
+.offers-haeding {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.offers-haeding h2 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    word-wrap: break-word;
+    margin-bottom: 16px;
+}
+
+.offers-haeding p {
+    font-size: 22px;
+    font-weight: 400;
+    word-wrap: break-word;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.offer-box {
+    max-width: 255px;
+    width: 100%;
+    display: block;
+    padding: 0 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.offer-box:nth-child(2)::before {
+    content: "Most Popular";
+    padding: 7px 14px;
+    position: absolute;
+    top: -10px;
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-block;
+    color: #ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #299B03;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.offer-box:nth-child(3)::before {
+    content: "Recommended";
+    padding: 7px 14px;
+    position: absolute;
+    top: -10px;
+    display: inline-block;
+    color: #ffffff;
+    left: 50%;
+    white-space: nowrap;
+    transform: translateX(-50%);
+    background-color: #2C4FBF;
+    border-radius: 8px;
+}
+
+.offer-box .offer-box-wrapper {
+    background-color: #FFFFFF;
+    border: 1px solid #F0ECEC;
+    border-radius: 12px;
+    padding: 40px 20px 17px 20px;
+    text-align: center;
+    height: 100%;
+}
+
+.offer-box .offer-box-wrapper:hover {
+    border: 1.1828px solid #2C4FBF;
+    box-shadow: 0px 3.54839px 23.6559px rgba(0, 0, 0, 0.05);
+}
+
+.offer-box .offer-box-wrapper h4 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    line-height: 22px;
+    margin-bottom: 42px;
+}
+
+.offer-box-wrapper span {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.offer-box-wrapper .offer-trips {
+    margin-bottom: 40px;
+}
+
+.offer-box-wrapper p {
+    font-Weight: 700;
+    font-Size: 36.6px;
+    line-height: 42.9px;
+    text-align: center;
+}
+
+.offer-box-wrapper p small {
+    font-size: 20px;
+}
+
+.offer-box-wrapper .offer-btn {
+    background: #FAAD13;
+    border-radius: 4px;
+    padding: 16px 22px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* offers-and-deals-section-end */
+
+
+/* What is Car Hire Excess Insurance-section  */
+.car-hire-insurance-section-wrapper {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.car-hire-insurance-heading h2 {
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+    margin-bottom: 16px;
+    color: #183B56;
+    margin-top: 65px;
+}
+
+.car-hire-insurance-heading p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    margin-bottom: 41px;
+}
+
+.car-hire-insurance-img {
+    position: relative;
+    padding-bottom: 48%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.car-hire-insurance-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.car-hire-insurance-ctn {
+    margin-top: 42px;
+}
+
+.car-hire-insurance-ctn p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 32px;
+    letter-spacing: 0px;
+    color: #5A7184;
+    word-wrap: break-word;
+}
+
+.car-hire-insurance-more {
+    display: flex;
+    align-self: center;
+    margin-top: 28px;
+}
+
+.car-hire-insurance-more p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0px;
+    color: #5A7184;
+    word-wrap: break-word;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    padding: 15px 30px;
+    background: #FAAD13;
+    border-radius: 10px;
+    margin-left: auto;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.blue-box {
+    padding: 48px 64px;
+    background: #1565D8;
+    position: relative;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.blue-box .blue-box-img img {
+    max-width: 300px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.blue-box span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-top: 33px;
+    display: inline-block;
+}
+
+.blue-box p {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 57px;
+    letter-spacing: 0.09px;
+    text-align: center;
+    overflow-wrap: break-word;
+    color: #ffffff;
+}
+
+.blue-box .blue-box-heading {
+    margin-bottom: 75px;
+}
+
+/* What is Car Hire Excess Insurance-section-end  */
+
+/* Travel Tips and Guides */
+.tips-and-guides-section {
+    margin-top: 133px;
+}
+
+.tips-and-guides-section .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.tips-guides-box {
+    width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tips-guides-box .tips-guides-box-wrraper {
+    background: #FFFFFF;
+    height: 100%;
+    box-shadow: 0px 15px 25px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+}
+
+.tips-and-guides-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #183B56;
+    margin-bottom: 40px;
+}
+
+.tips-guides-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.tips-guides-img {
+    position: relative;
+    padding-bottom: 65%;
+    border-radius: 12px 12px 0px 0px;
+    overflow: hidden;
+}
+
+.tips-guides-ctn {
+    padding: 32px;
+}
+
+.tips-guides-ctn .tips-guides-title {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 66px;
+    color: #183B56;
+}
+
+.tips-guides-ctn .tips-guides-mark-vallet p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0px;
+    color: #183B56;
+    margin-bottom: 7px;
+}
+
+.tips-guides-ctn .tips-guides-mark-vallet .tips-guides-insurance-writer {
+    display: flex;
+    align-items: center;
+}
+
+.tips-guides-ctn .tips-guides-mark-vallet .tips-guides-insurance-writer p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #183B56;
+    margin-bottom: 7px;
+    word-wrap: break-word;
+}
+
+.tips-guides-ctn .tips-guides-mark-vallet .tips-guides-insurance-writer a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    display: block;
+    color: #2F80ED;
+    margin-left: auto;
+}
+
+.tips-guides-ctn .tips-guides-mark-vallet .tips-guides-insurance-writer span {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    position: relative;
+    color: #5A7184;
+    padding-left: 36px;
+}
+
+.tips-guides-ctn .tips-guides-mark-vallet .tips-guides-insurance-writer span::before {
+    position: absolute;
+    content: '\f00c';
+    font-family: 'FontAwesome';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(54, 179, 126, 0.15);
+    color: #36B37E;
+    top: 0;
+    left: 0;
+}
+
+.more-guides {
+    text-align: center;
+}
+
+.more-guides-btn {
+    padding: 12px 24px;
+    color: #1565D8;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #1565D8;
+    border-radius: 8px;
+    margin-top: 48px;
+    transition: all .3s;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.more-guides-btn i {
+    margin-left: 10px;
+}
+
+.more-guides-btn:hover {
+    background-color: #1565D8;
+    color: #FFFFFF;
+}
+
+/* Travel Tips and Guides-end */
+
+/* FAQ-accordion-section */
+.faq-accordion-section {
+    margin-top: 124px;
+}
+
+.faq-accordion-wrrapper {
+    margin-bottom: 52px;
+}
+
+.accordion-box {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    opacity: 0;
+    transition-property: opacity, transform;
+    transform: translate3d(0, 100px, 0);
+    transition-timing-function: ease;
+    transition-duration: 0.8s;
+}
+
+.accordion-box.fade-element.do-fade {
+    opacity: 1;
+    transform: translateZ(0);
+}
+
+.faq-accordion-heading {
+    margin-bottom: 40px;
+}
+
+.faq-accordion-heading h2 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.comman-accordion {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.accordion-box>a {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    color: #171C2B;
+    border: 1px solid rgba(228, 228, 228, 0.5);
+    border-radius: 8px;
+    letter-spacing: 1px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    position: relative;
+}
+
+.accordion-box .content {
+    position: relative;
+    padding: 0px 24px;
+    display: none;
+}
+
+.accordion-box .content .fade-element {
+    padding-right: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 24px;
+
+}
+
+.accordion-box .content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.accordion-sign {
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+.accordion-sign .horizontal {
+    position: absolute;
+    background-color: #171C2B;
+    width: 22px;
+    height: 3px;
+    left: 50%;
+    border-radius: 4px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.accordion-sign .vertical {
+    position: absolute;
+    background-color: #171C2B;
+    width: 22px;
+    border-radius: 4px;
+    height: 3px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.accordion-sign .vertical:after {
+    content: "";
+    position: absolute;
+    background-color: #171C2B;
+    width: 3px;
+    border-radius: 4px;
+    height: 22px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.accordion-sign.opened .vertical {
+    opacity: 0;
+}
+
+.accordion-sign.opened .horizontal {
+    opacity: 1;
+}
+
+.faq-accordion-section .faq-accordion-page-visit {
+    border-top: 1px solid #94B1C7;
+    max-width: 906px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.faq-accordion-section .faq-accordion-page-visit .faq-accordion-page-visit-ctn {
+    max-width: 752px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.faq-accordion-section .faq-accordion-page-visit .faq-accordion-page-visit-ctn p {
+    text-align: center;
+    color: #171C2B;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.faq-accordion-section .faq-accordion-page-visit .faq-accordion-page-visit-ctn a {
+    text-align: center;
+    color: #0F84EB;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+/* FAQ-accordion-section-end */
+
+
+/* footer-section */
+.footer-upper {
+    max-width: 100%;
+    margin-top: 42px;
+}
+
+.footer-upper img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+    bottom: -1px;
+}
+
+.footer-section {
+    background-color: #0D2436;
+    padding-top: 45px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.footer-section .footer-logo {
+    max-width: 100%;
+}
+
+.footer-links {
+    max-width: calc(100% - 400px);
+    margin: 0 auto;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links ul li {
+    list-style: none;
+    margin-bottom: 20px;
+    width: 26%;
+    padding: 0 10px;
+}
+
+.footer-links ul li:first-child,
+.footer-links ul li:nth-child(4) {
+    width: 48%;
+}
+
+.footer-links ul li a {
+    font-family: 'Open Sans';
+    color: #959EAD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+    display: block;
+}
+
+.footer-social-links ul li {
+    list-style: none;
+}
+
+.footer-social-links {
+    max-width: 200px;
+}
+
+.footer-social-links ul {
+    display: flex;
+}
+
+.footer-social-links ul li {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.footer-social-links ul li:first-child {
+    margin-left: 0;
+}
+
+.footer-social-links ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-social-links ul li a {
+    display: block;
+    color: #5A7184;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* footer-section-End */
+
+/*---------------------------- deals-page-cssp------------------------------------------ */
+
+.hero-section {
+    background-image: url(../image/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 106px;
+}
+
+.hero-inner {
+    max-width: 990px;
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.hero-info {
+    background: #FFFFFF;
+    border: 1px solid #F0ECEC;
+    border-radius: 10px;
+    padding: 17px 32px;
+    position: absolute;
+    max-width: 960px;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: -35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero-info-img img {
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+}
+
+.hero-info-data {
+    margin-left: 25px;
+    font-family: 'Roboto';
+}
+
+.hero-info-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+
+.hero-info-txt {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5A7184;
+}
+
+.travel-feature-section {
+    background: #F9FCFF;
+    padding: 55px 0 20px;
+}
+
+.tf-inner {
+    max-width: 990px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tf-left {
+    max-width: 637px;
+    width: 100%;
+}
+
+.travel-module {
+    background: #FFF5E6;
+    border: 1px solid #F5A623;
+    border-radius: 10px 10px 0 0;
+}
+
+.travel-module-inner {
+    padding: 40px 22px 33px 33px;
+}
+
+.tm-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -30px;
+}
+
+.tm-row>div {
+    padding: 0 30px;
+    border-right: 1px solid #F5A623;
+}
+
+.tm-change-row,
+.tm-row>div>p:last-child {
+    margin-top: 20px
+}
+
+.tm-change-row,
+.tm-row>div>p {
+    font-family: Roboto
+}
+
+.tm-change-row>p,
+.tm-row>div>p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000
+}
+
+.tm-row>div:last-child {
+    border: none;
+    width: 25%
+}
+
+.tm-row>div:first-child,
+.tm-row>div:nth-child(2) {
+    width: 35%
+}
+
+.tm-row>div:last-child>p,
+.tm-row>div:nth-child(2)>p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.tm-change-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center
+}
+
+.change-cta {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 17px;
+    color: #ca7e00;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    border: 2px solid #f5a623;
+    border-radius: 5px;
+    width: 70px;
+    text-align: center;
+    padding: 7px 0
+}
+
+.feature-box {
+    margin-top: 18px
+}
+
+.feature-box-inner {
+    background: #fff;
+    border: 1px solid #f0ecec;
+    padding: 15px 26px 26px;
+    border-radius: 10px
+}
+
+.feature-list {
+    list-style: none
+}
+
+.feature-list-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: Roboto;
+    color: #000;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 30px
+}
+
+.feature-list-item:last-child {
+    margin-bottom: 0
+}
+
+.feature-list-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../image/done-icon.svg);
+    background-size: cover;
+    background-position: center;
+    width: 14px;
+    height: 11px;
+    background-repeat: no-repeat
+}
+
+.ce-price span,
+.ce-txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000
+}
+
+.Choose-excess {
+    margin-top: 12px;
+    font-family: Roboto
+}
+
+.Choose-excess-inner {
+    background: #fff;
+    border: 1px solid #f0ecec;
+    border-radius: 10px;
+    padding: 24px 26px
+}
+
+.ce-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.ce-price {
+    margin-left: 15px
+}
+
+.ce-price a {
+    border: 1px solid #f0ecec;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    color: #000000;
+}
+
+.ce-price a.active {
+    background: #1565d8;
+    color: #fff
+}
+
+.plan-module {
+    margin-top: 35px;
+    font-family: 'Roboto';
+}
+
+.pm-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -4px;
+}
+
+.pm-box {
+    padding: 0 4px;
+    text-decoration: none;
+}
+
+.pm-box {
+    width: 33.33%;
+}
+
+.pm-box-inner {
+    background: #FFFFFF;
+    border: 1px solid #F0ECEC;
+    border-radius: 10px;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+span.select-circle {
+    border-radius: 50%;
+    border: 1px solid #CED0D5;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.pm-box.active span.select-circle:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2C4FBF;
+    border-radius: 50%;
+}
+
+.pm-title {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    line-height: 20px;
+    margin-bottom: 17px;
+}
+
+.pm-price {
+    font-weight: 700;
+    font-size: 17.6842px;
+    line-height: 21px;
+    color: #CDCDCD;
+    margin-bottom: 10px;
+}
+
+.pm-box.active .pm-price {
+    color: #000000;
+}
+
+.pm-box.active .pm-price span {
+    color: #000000;
+}
+
+.pm-price span {
+    font-size: 31px;
+    line-height: 36px;
+}
+
+.pm-label {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    border-radius: 7px;
+    padding: 5px 0;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    line-height: 16px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.Most-Popular-label {
+    max-width: 98px;
+    background: #299B03;
+}
+
+.Recommended-label {
+    background: #2C4FBF;
+    max-width: 105px;
+}
+
+.pm-box.active .pm-txt {
+    color: #000000;
+}
+
+.pm-txt {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999898;
+    padding: 0 20px;
+}
+
+/* ------------------------------deals-page-css-End -------------------------------------*/
+
+
+
+
+
+
+/* media-query */
+@media (max-width:1440px) {
+    .right-side-menu {
+        right: -22%;
+    }
+}
+
+@media (max-width:1366px) {
+    .main-menu nav ul li {
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    .right-side-menu {
+        right: -8%;
+    }
+}
+
+@media (max-width:1199px) {
+
+    /* header-menu */
+    .container {
+        width: 960px;
+    }
+
+    header .container {
+        width: 96%;
+    }
+
+    .right-side-menu {
+        right: -5%;
+    }
+
+    .our-benifits-services ul li {
+        font-size: 16px;
+        line-height: 18px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .customers-reviews .reviews-box-wrapper{
+        max-width: 48%;
+        margin-bottom: 20px;
+    }
+    .our-benifits-services {
+        max-width: 69%;
+    }
+
+    /* footer-section */
+    .footer-links ul li:first-child,
+    .footer-links ul li:nth-child(4) {
+        width: 42%;
+    }
+
+}
+
+@media (max-width:991px) {
+    .container {
+        width: 720px;
+    }
+
+    /* header */
+    header .nav-moblie {
+        display: block;
+        transition: all .3s;
+        text-decoration: none;
+    }
+
+    .nav-moblie .fa-xmark {
+        color: #00244F;
+        font-size: 24px;
+        display: none;
+        height: 35px;
+        line-height: 32px;
+        transition: all .3s;
+    }
+
+    .close-btn .fa-xmark {
+        display: block;
+    }
+
+    .close-btn .fa-bars {
+        display: none;
+    }
+
+    /* header-end */
+    .main-menu {
+        position: absolute;
+        top: 74px;
+        left: 0;
+        background-color: #ffffff;
+        width: 100%;
+        margin: 0;
+        z-index: 9;
+    }
+
+    .main-menu nav {
+        display: none;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 22px 0;
+    }
+
+    .main-menu nav ul {
+        flex-direction: column;
+    }
+
+    .main-menu nav ul li {
+        display: block;
+        padding: 0 20px;
+        line-height: 30px;
+        margin: 0;
+    }
+
+    .main-menu nav ul li a {
+        padding: 16px;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .main-menu nav ul li:nth-last-child(1),
+    .main-menu nav ul li:nth-last-child(2),
+    .main-menu nav ul li:nth-last-child(3) {
+        position: relative;
+        right: 0%;
+    }
+    
+    /* slider-section */
+    .slider-banner-section {
+        padding-top: 50px;
+    }
+
+    .slider-heading h1 {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .slider-inputs-field select,
+    .pick-drop-date input {
+        padding: 12px 18px;
+    }
+
+    .pick-drop-date input {
+        max-width: 268px;
+        width: 100%;
+    }
+
+    .worldwide-excellent {
+        max-width: 90%;
+        width: 100%;
+        padding: 16px;
+        margin: 40px auto;
+    }
+    .car-companies-worldwide-Section .row{
+        justify-content: center;
+    }
+    .car-companies-worldwide-Section {
+        padding: 50px 0;
+    }
+
+    .car-companies-worldwide-img {
+        display: block;
+        max-width: 90%;
+        margin-top: 50px;
+    }
+    .our-benifits-services-img{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .our-benifits-services {
+        max-width: 100%;
+    }
+
+    .our-benifits-services-img img {
+        max-width: 85%;
+    }
+    /*offer-box-section */
+    .offer-box{
+        max-width: 33.33%;
+    }
+    .benifits-box {
+        max-width: 90%;
+        padding: 0 10px;
+        margin: 10px auto;
+    }
+
+    .blue-box p {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .tips-guides-ctn .tips-guides-title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .tips-guides-ctn{
+        padding: 15px;   
+    }
+    
+    .accordion-box>a {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    /* footer-section */
+    .footer-social-links ul {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer-links ul{
+        justify-content: center;
+    }
+    .footer-links ul li{
+        width: auto;
+    }
+    .footer-links {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .footer-section .footer-logo{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+}
+
+@media (max-width:767px) {
+    .container {
+       width: 100%;
+    }
+
+    /* header */
+    header .nav-moblie {
+        display: block;
+        transition: all .3s;
+        text-decoration: none;
+    }
+
+    .nav-moblie .fa-xmark {
+        color: #00244F;
+        font-size: 24px;
+        display: none;
+        height: 35px;
+        line-height: 32px;
+        transition: all .3s;
+    }
+
+    .close-btn .fa-xmark {
+        display: block;
+    }
+
+    .close-btn .fa-bars {
+        display: none;
+    }
+
+    /* header-end */
+    .main-menu {
+        position: absolute;
+        padding: 0 30px;
+        top: 75px;
+        left: 0;
+        background-color: #ffffff;
+        width: 100%;
+        margin: 0;
+        z-index: 9;
+    }
+
+    .main-menu nav {
+        display: none;
+        width: 100%;
+        background-color: var(--bg-color);
+    }
+
+    .main-menu nav ul {
+        flex-direction: column;
+    }
+
+    .main-menu nav ul li {
+        display: block;
+        padding: 0 20px;
+        line-height: 30px;
+        margin: 0;
+    }
+
+    .main-menu nav ul li a {
+        padding: 16px;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .main-menu nav ul li:nth-last-child(1),
+    .main-menu nav ul li:nth-last-child(2),
+    .main-menu nav ul li:nth-last-child(3) {
+        position: relative;
+        right: 0%;
+    }
+
+    .main-menu nav ul li>ul {
+        width: 200px;
+        top: 33%;
+        left: 36%;
+    }
+
+    /* customer-reviews */
+    .customers-reviews .reviews-box-wrapper {
+        max-width: 340px;
+        margin-bottom: 20px;
+    }
+
+    /* our-benifits */
+    .benifits-box .benifits-box-wrapper {
+        padding: 18px 22px;
+    }
+
+    .our-benifits-section .row {
+        align-items: center;
+    }
+
+
+
+    /* offer and deals-section */
+    .offer-box {
+        max-width: 65%;
+        margin: 0 auto 20px auto;
+    }
+
+    .offers-haeding h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .offers-haeding p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .our-benifits-services {
+        max-width: 55%;
+    }
+
+    .our-benifits-services ul li {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .tips-guides-ctn {
+        padding: 28px;
+    }
+
+    .tips-guides-box {
+        padding: 0 8px;
+        width: 60%;
+        margin: 10px auto;
+    }
+
+
+}
+
+@media (max-width:600px) {
+    .container {
+        width: 100%;
+    }
+
+    .main-menu {
+        top: 72px;
+    }
+
+    .main-menu nav ul li {
+        padding: 0;
+    }
+
+    /* slider-section */
+    .slider-banner-section{
+        height: 100vh;
+    }
+    .slider-heading{
+        margin-bottom: 30px;
+    }
+    .pick-drop-date input {
+        max-width: 48%;
+    }
+
+    .age-vehicle select {
+        max-width: 48%;
+    }
+    .get-btn{
+        margin: 20px auto;
+    }
+
+    .slider-heading h1 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .slider-ctn-wrraper {
+        max-width: 100%;
+    }
+
+    .car-worldwide-heading h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .worldwide-excellent {
+        max-width: 100%;
+    }
+    
+    .customers-reviews .reviews-box-wrapper {
+        max-width: 100%;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .car-companies-worldwide-img {
+        max-width: 100%;
+        padding: 0 40px;
+    }
+
+    /* benifits-box-section */
+    .worldwide-excellent .excellent-ctn p {
+        padding-right: 5px;
+        font-size: 12px;
+    }
+
+    .worldwide-excellent .excellent-ctn b {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        padding-right: 12px;
+    }
+
+    .worldwide-excellent .excellent-ctn span {
+        font-size: 12px;
+    }
+
+    .our-benifits-section {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    .benifits-box {
+        max-width: 100%;
+    }
+
+    .our-benifits-services {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .our-benifits-services-img {
+       margin: 30px auto 0 auto;
+    }
+
+    .our-benifits-services-img img {
+        max-width: 100%;
+    }
+
+    .blue-box {
+        padding: 40px;
+    }
+    .blue-box .blue-box-heading {
+        margin-bottom: 30px;
+    }
+    .blue-box p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* .offer-box-section */
+    .offers-and-deals-section {
+        padding: 50px 0;
+    }
+
+    .offer-box {
+        max-width: 51%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .offers-haeding h2 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .offers-haeding p {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .offer-box:last-child {
+        margin-bottom: 0;
+    }
+
+    .car-hire-insurance-section-wrapper {
+        max-width: 100%;
+    }
+
+    .car-hire-insurance-more p {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 22px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        margin-top: 10px;
+    }
+
+    .tips-guides-box {
+        width: 72%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+
+    .tips-guides-box:last-child {
+        margin-bottom: 0;
+    }
+    .car-hire-insurance-more{
+        display: block;
+    }
+
+    /* faq-section */
+    .faq-accordion-section {
+        margin-top: 80px;
+    }
+
+    .faq-accordion-heading h2 {
+        font-size: 26px;
+        line-height: 34px;
+        font-weight: 600;
+    }
+
+    .comman-accordion {
+        max-width: 90%;
+    }
+
+    .faq-accordion-section .faq-accordion-page-visit .faq-accordion-page-visit-ctn p,
+    .faq-accordion-section .faq-accordion-page-visit .faq-accordion-page-visit-ctn a {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .faq-accordion-section .faq-accordion-page-visit {
+        padding-top: 50px;
+    }
+
+    .accordion-box>a {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .accordion-box>a {
+        padding: 15px 20px;
+    }
+
+    .accordion-box .content .fade-element {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* footer-section */
+    .footer-section {
+        padding-top: 25px;
+        padding-bottom: 60px;
+    }
+
+    .footer-logo {
+        margin-left: 20px;
+    }
+
+    .footer-links {
+        max-width: 62%;
+    }
+
+    .footer-social-links ul {
+        bottom: 25px;
+    }
+    .footer-links ul li:first-child, .footer-links ul li:nth-child(4){
+        text-align: center;
+        width: 100%;
+    }
+    .footer-links ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:420px) {
+    .container {
+        max-width: 100%;
+    }
+
+    /* header */
+    header .nav-moblie {
+        display: block;
+        transition: all .3s;
+        text-decoration: none;
+    }
+
+    .nav-moblie .fa-xmark {
+        color: #00244F;
+        font-size: 24px;
+        display: none;
+        height: 35px;
+        line-height: 32px;
+        transition: all .3s;
+    }
+
+    .close-btn .fa-xmark {
+        display: block;
+    }
+
+    .close-btn .fa-bars {
+        display: none;
+    }
+
+    header {
+        padding: 12px 0;
+    }
+
+    .main-menu {
+        position: absolute;
+        padding: 0px;
+        top: 55px;
+        left: 0;
+        background-color: #ffffff;
+        width: 100%;
+        margin: 0;
+        z-index: 9;
+    }
+
+    .main-menu nav {
+        display: none;
+        width: 100%;
+        background-color: var(--bg-color);
+    }
+
+    .main-menu nav ul {
+        flex-direction: column;
+    }
+
+    .main-menu nav ul li {
+        display: block;
+        padding: 0 20px;
+        line-height: 30px;
+        margin: 0;
+    }
+
+    .main-menu nav ul li a {
+        padding: 0px;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .main-menu nav ul li:nth-last-child(1),
+    .main-menu nav ul li:nth-last-child(2),
+    .main-menu nav ul li:nth-last-child(3) {
+        position: relative;
+        right: 0%;
+    }
+    .worldwide-excellent .excellent-ctn{
+        flex-wrap: wrap;
+    }
+    /* slider-section */
+    .slider-banner-section{
+        height: 100vh;
+    }
+    .pick-drop-date {
+        margin-top: 10px;
+    }
+
+    .pick-drop-date input {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .age-vehicle select {
+        max-width: 100%;
+    }
+    .age-vehicle{
+        margin-top: 0;
+    }
+    .age-vehicle select{
+        margin-bottom: 10px;
+    }
+    /* benifits-box-section */
+    .benifits-box {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .benifits-box:last-child {
+        margin-bottom: 0;
+    }
+
+    .our-benifits-services-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .our-benifits-services ul li span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .our-benifits-services {
+        margin: 0 auto;
+    }
+
+    .our-benifits-services-img {
+        mask-size: 100%;
+        -webkit-mask-size: 100%;
+    }
+
+    .our-benifits-services-img img {
+        max-width: 100%;
+    }
+
+    .offer-box {
+        max-width: 90%;
+    }
+    .offers-haeding h2 {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    /* car-hire-insurance-section */
+    .car-hire-insurance-ctn p {
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+    .car-hire-insurance-heading h2 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 38px;
+        margin-bottom: 12px;
+        margin-top: 45px;
+    }
+
+    .car-hire-insurance-heading p {
+        margin-bottom: 30px;
+    }
+
+    .car-hire-insurance-more {
+        display: block;
+        text-align: center;
+    }
+
+    .car-hire-insurance-more p {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    .car-hire-insurance-more .btn {
+        padding: 15px 30px;
+        border-radius: 10px;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    .blue-box p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .blue-box .blue-box-img img {
+        max-width: 60%;
+    }
+    /* car-hire-insurance-end */
+
+    /* Travel Tips and Guides */
+    .tips-and-guides-section{
+        margin-top: 50px;
+    }
+    .tips-guides-box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .tips-and-guides-heading h2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        margin-bottom: 30px;
+    }
+    .tips-guides-box:last-child {
+        margin-bottom: 0;
+    }
+
+    .blue-box .blue-box-img img {
+        max-width: 200px;
+    }
+
+    .blue-box {
+        padding: 24px 32px;
+    }
+
+    .blue-box .blue-box-heading {
+        margin-bottom: 25px;
+    }
+    .blue-box .blue-box-img img {
+        max-width: 58%;
+    }
+
+    .blue-box p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    /* faq-accordion-box-section */
+    .accordion-box>a {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .accordion-sign{
+        width: 25px;
+        height: 25px;
+        right: 8px;
+    }
+    .accordion-sign .horizontal {
+        width: 18px;
+    }
+    .accordion-sign .vertical:after{
+        height: 18px;
+    }
+    .accordion-box>a {
+        padding: 15px;
+    }
+    .accordion-box .content .fade-element{
+        padding-right: 0;
+    }
+    .accordion-box .content .fade-element {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    /* footer-section */
+    .footer-links ul li:first-child, .footer-links ul li:nth-child(4){
+        width: 100%;
+    }
+    .footer-links ul li{
+        width: 100%;
+    }
+
+
+}
